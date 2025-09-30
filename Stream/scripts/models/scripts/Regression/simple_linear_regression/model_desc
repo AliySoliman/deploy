@@ -1,0 +1,20 @@
+model_description = """
+            <div class="code-container">
+                <div class="code-header">
+                    <span>MODEL DESCRIPTION</span>
+                    <span>Linear Regression</span>
+                </div>
+                <div>
+                    Linear regression models the relationship between a dependent variable and one or more 
+                    independent variables by fitting a linear equation to observed data. The model assumes 
+                    a linear relationship between the input variables (x) and the single output variable (y).
+                    
+                    Equation: y = β₀ + β₁x₁ + ... + βₙxₙ
+                    Where:
+                    - y is the predicted value
+                    - β₀ is the bias term
+                    - β₁...βₙ are the weights for each feature
+                    - x₁...xₙ are the input features
+                </div>
+            </div>
+            """

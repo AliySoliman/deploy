@@ -1,0 +1,39 @@
+"""
+            <div class="code-container">
+                <div class="code-header">
+                    <span>MODEL DESCRIPTION</span>
+                    <span>Hierarchical Clustering</span>
+                </div>
+                <div>
+                    Hierarchical clustering is an unsupervised machine learning algorithm that builds a 
+                    hierarchy of clusters by either a bottom-up (agglomerative) or top-down (divisive) 
+                    approach. The algorithm creates a tree-like structure (dendrogram) that shows the 
+                    relationships and similarities between data points at different levels of granularity.
+                    
+                    <strong>Agglomerative Approach (Bottom-Up):</strong>
+                    1. Start with each data point as its own cluster
+                    2. Compute distance matrix between all clusters
+                    3. Iteratively merge the closest pairs of clusters based on linkage criterion
+                    4. Update distance matrix and repeat until all points are in a single cluster
+                    
+                    <strong>Key Parameters:</strong>
+                    • <strong>Linkage Method:</strong> Defines how to measure distance between clusters
+                    • <strong>Distance Metric:</strong> How to measure distance between points
+                    • <strong>Number of Clusters:</strong> Determines where to cut the dendrogram
+                    
+                    <strong>Linkage Methods:</strong>
+                    • <strong>Ward:</strong> Minimizes variance within clusters (Δ(A,B) = Σ||x - centroid_AB||² - [Σ||x - centroid_A||² + Σ||x - centroid_B||²])
+                    • <strong>Complete:</strong> Uses maximum distance between clusters (d(A,B) = max{d(a,b) : a∈A, b∈B})
+                    • <strong>Average:</strong> Uses average distance between all pairs (d(A,B) = (1/|A||B|) ΣΣ d(a,b))
+                    • <strong>Single:</strong> Uses minimum distance between clusters (d(A,B) = min{d(a,b) : a∈A, b∈B})
+                    
+                    <strong>Distance Metrics:</strong>
+                    • <strong>Euclidean:</strong> √Σ(xᵢ - yᵢ)² (straight-line distance, required for Ward)
+                    • <strong>Manhattan:</strong> Σ|xᵢ - yᵢ| (city-block distance)
+                    • <strong>Cosine:</strong> 1 - (x·y)/(||x||·||y||) (angle-based similarity)
+                    
+                    The dendrogram helps determine the optimal number of clusters by identifying 
+                    the largest vertical distance that doesn't intersect any horizontal line.
+                </div>
+            </div>
+            """
